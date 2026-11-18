@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CASA BRAVA — Boutique Hotel on the Costa Brava</title>
+  <meta name="description" content="A small boutique hotel on the Costa Brava for those who want to be closer to the sea, walk more and take their time.">
+  <meta name="theme-color" content="#14110e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CASA BRAVA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="CASA BRAVA — Boutique Hotel on the Costa Brava">
+  <meta property="og:description" content="A small boutique hotel on the Costa Brava for those who want to be closer to the sea, walk more and take their time.">
+  <!-- TODO: Add canonical, og:url and og:image once the domain and an approved social preview image (1200×630) exist. See docs/seo-map.md. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('has-motion');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- TODO: AI-generated images and demo facts. See docs/demo-data.md. Replace with approved client content before publishing. -->
+
+  <div class="page-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="CASA BRAVA — home">Casa Brava</a>
+      <div class="site-header__menu" id="site-menu">
+        <nav class="site-header__nav" aria-label="Main">
+          <a class="site-header__link" href="rooms.html">Rooms</a>
+          <a class="site-header__link" href="#hotel">The hotel</a>
+          <a class="site-header__link" href="#costa-brava">Costa Brava</a>
+        </nav>
+        <nav class="site-header__nav site-header__nav--end" aria-label="Secondary">
+          <a class="site-header__link" href="#gallery">Gallery</a>
+          <a class="site-header__link" href="#location">Location</a>
+          <a class="site-header__link site-header__link--cta" href="#booking">Book a stay</a>
+        </nav>
+      </div>
+      <a class="site-header__book" href="#booking"><span>Book a stay</span></a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="site-header__toggle-label">Menu</span><span class="site-header__toggle-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__image" src="images/placeholder-ai-hotel-pool-sea.webp" alt="CASA BRAVA pool terrace above a cove on the Costa Brava" width="1672" height="941" fetchpriority="high">
+      <div class="container hero__inner">
+        <div class="hero__meta">
+          <span>Boutique hotel</span>
+          <span>Costa Brava, Spain</span>
+          <span>Around 20 rooms</span>
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__title-script">a few days by the</span>
+          <span class="hero__title-serif">Mediterranean</span>
+        </h1>
+        <p class="hero__lead">A small boutique hotel on the Costa Brava for those who want to be closer to the sea, walk more and take their time.</p>
+
+        <form class="booking-bar" action="#" novalidate>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-check-in">Check-in</label>
+            <input class="booking-bar__input" type="date" id="hero-check-in" name="check_in" required data-check-in>
+          </div>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-check-out">Check-out</label>
+            <input class="booking-bar__input" type="date" id="hero-check-out" name="check_out" required data-check-out>
+          </div>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-guests">Guests</label>
+            <select class="booking-bar__input" id="hero-guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <button class="booking-bar__submit" type="submit">Find a room <span aria-hidden="true">⟶</span></button>
+          <p class="booking-bar__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <svg class="seal hero__seal" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="seal-path-hero" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+        <text><textPath href="#seal-path-hero">Casa Brava · Costa Brava · Boutique hotel · </textPath></text>
+        <text class="seal__center" x="60" y="68" text-anchor="middle">CB</text>
+      </svg>
+    </section>
+
+    <!-- 01 Intro: typography with floating images -->
+    <section class="section intro" id="hotel">
+      <!-- Photos start scattered around the title and settle into one row while the frame is pinned (js/main.js → scatter) -->
+      <div class="intro__track" data-scatter>
+        <div class="container">
+          <p class="eyebrow">01 / The hotel</p>
+        </div>
+        <div class="container intro__frame">
+          <h2 class="display intro__title">A place people <em>come</em> for the sea <em>and</em> stay for the atmosphere.</h2>
+          <ul class="intro__photos" aria-hidden="true">
+            <li class="intro__photo" style="--sx: 10%; --sy: 34%; --sr: -5deg; --ss: 1.45"><img src="images/placeholder-ai-hotel-lobby.webp" alt="" width="1672" height="941" loading="lazy"></li>
+            <li class="intro__photo" style="--sx: 4%; --sy: 78%; --sr: 4deg; --ss: 1.15"><img src="images/placeholder-ai-hotel-facade.webp" alt="" width="1672" height="941" loading="lazy"></li>
+            <li class="intro__photo intro__photo--wide" style="--sx: 29%; --sy: 84%; --sr: 3deg; --ss: 0.85"><img src="images/placeholder-ai-breakfast-terrace.webp" alt="" width="1672" height="941" loading="lazy"></li>
+            <li class="intro__photo intro__photo--wide" style="--sx: 67%; --sy: 82%; --sr: -3deg; --ss: 0.95"><img src="images/placeholder-ai-terrace-sea.webp" alt="" width="1672" height="941" loading="lazy"></li>
+            <li class="intro__photo" style="--sx: 90%; --sy: 36%; --sr: 5deg; --ss: 1.45"><img src="images/placeholder-ai-hotel-bar.webp" alt="" width="1672" height="941" loading="lazy"></li>
+            <li class="intro__photo" style="--sx: 94%; --sy: 80%; --sr: -4deg; --ss: 1"><img src="images/placeholder-ai-costa-brava-cove.webp" alt="" width="1920" height="819" loading="lazy"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="intro__columns">
+          <p class="lead">CASA BRAVA is a small hotel with around 20 rooms, just a short walk from the sea.</p>
+          <p>It’s easy to spend a few days here at your own pace: a slow breakfast in the morning, a trip to the beach or along the coast, back to the pool after a walk, and a drink on the terrace that lingers into the evening.</p>
+          <p>Everything you need for a short break on the Costa Brava — the sea, the sun, and time you don’t have to plan in advance.</p>
+        </div>
+        <a class="link-bar" href="#amenities">explore the hotel <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <!-- 02 Rooms -->
+    <section class="section section--light rooms" id="rooms">
+      <div class="container">
+        <header class="rooms__header">
+          <div>
+            <p class="eyebrow">02 / Rooms</p>
+            <h2 class="heading">Choose how you’d like <em>to wake up</em> on the Costa Brava</h2>
+          </div>
+          <p class="rooms__lead">For a short trip for two, a stay with your own terrace, or mornings with a sea view.</p>
+        </header>
+
+        <ol class="rooms__list">
+          <li class="room-tile">
+            <div class="room-tile__label"><h3 class="room-tile__name">Standard Room</h3><span class="room-tile__count">01 / 03</span></div>
+            <a class="room-tile__media" href="rooms.html#standard-room" tabindex="-1" aria-hidden="true"><img class="room-tile__image" src="images/placeholder-ai-room-standard.webp" alt="" width="1672" height="941" loading="lazy"></a>
+            <p class="room-tile__subtitle">Everything you need for a few days by the sea</p>
+            <p class="room-tile__text">A cosy room for two guests who plan to spend their days on beaches and walks — and come back to CASA BRAVA to rest and recharge for the next day.</p>
+            <div class="room-tile__actions">
+              <a class="arrow-link" href="rooms.html#standard-room">View room <span aria-hidden="true">⟶</span></a>
+              <a class="arrow-link arrow-link--muted" href="#booking">Check dates</a>
+            </div>
+          </li>
+          <li class="room-tile">
+            <div class="room-tile__label"><h3 class="room-tile__name">Room with Terrace</h3><span class="room-tile__count">02 / 03</span></div>
+            <a class="room-tile__media" href="rooms.html#room-with-terrace" tabindex="-1" aria-hidden="true"><img class="room-tile__image" src="images/placeholder-ai-room-terrace.webp" alt="" width="1672" height="941" loading="lazy"></a>
+            <p class="room-tile__subtitle">Your own terrace and a little more space to unwind</p>
+            <p class="room-tile__text">Start the morning outdoors, or stay out on the terrace in the evening when you’re not quite ready to go inside.</p>
+            <div class="room-tile__actions">
+              <a class="arrow-link" href="rooms.html#room-with-terrace">View room <span aria-hidden="true">⟶</span></a>
+              <a class="arrow-link arrow-link--muted" href="#booking">Check dates</a>
+            </div>
+          </li>
+          <li class="room-tile">
+            <div class="room-tile__label"><h3 class="room-tile__name">Sea View Room</h3><span class="room-tile__count">03 / 03</span></div>
+            <a class="room-tile__media" href="rooms.html#sea-view-room" tabindex="-1" aria-hidden="true"><img class="room-tile__image" src="images/placeholder-ai-room-sea-view.webp" alt="" width="1672" height="941" loading="lazy"></a>
+            <p class="room-tile__subtitle">Wake up to a view of the Mediterranean</p>
+            <p class="room-tile__text">For those who want the sea to be not just where the walk leads, but part of the stay itself. Open the curtains in the morning — and the Costa Brava is right there.</p>
+            <div class="room-tile__actions">
+              <a class="arrow-link" href="rooms.html#sea-view-room">View room <span aria-hidden="true">⟶</span></a>
+              <a class="arrow-link arrow-link--muted" href="#booking">Check dates</a>
+            </div>
+          </li>
+        </ol>
+
+        <a class="link-bar link-bar--dark" href="rooms.html">view all rooms <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <!-- 03 At the hotel: split panels -->
+    <section class="amenities" id="amenities">
+      <div class="amenities__split">
+        <div class="amenities__panel">
+          <p class="eyebrow">03 / At the hotel</p>
+          <h2 class="heading amenities__title">
+            <span class="script amenities__script" aria-hidden="true">slowly</span>
+            The sea isn’t the only place <em>you’ll want to linger</em>
+          </h2>
+          <p class="lead">Sometimes the best plan for the day is no plan at all.</p>
+          <p>Spend a few hours by the pool after the beach, find your favourite spot on the terrace, or stop by the bar before an evening walk.</p>
+          <p>CASA BRAVA is a small hotel, so it’s easy to slip into a slower rhythm and simply enjoy a few days by the sea.</p>
+        </div>
+        <img class="amenities__image" src="images/placeholder-ai-pool-terrace-sea.webp" alt="Sun loungers by the pool with the sea below" width="1672" height="941" loading="lazy">
+      </div>
+      <div class="container amenities__spaces">
+        <div class="amenities__aside">
+          <svg class="seal amenities__seal" viewBox="0 0 120 120" aria-hidden="true">
+            <defs><path id="seal-path-amenities" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#seal-path-amenities">Pool · Terrace · Bar · Slow days · </textPath></text>
+            <text class="seal__center" x="60" y="68" text-anchor="middle">CB</text>
+          </svg>
+        </div>
+        <ul class="amenities__list" aria-label="Hotel facilities" tabindex="0">
+          <li class="facility">
+            <div class="facility__media"><img class="facility__image" src="images/placeholder-ai-hotel-pool-umbrellas.webp" alt="Pool with sun loungers and umbrellas" width="1672" height="941" loading="lazy"></div>
+            <p class="facility__index">I</p>
+            <h3 class="facility__name">Pool</h3>
+            <p class="facility__text">A few hours by the water after the beach.</p>
+          </li>
+          <li class="facility">
+            <div class="facility__media"><img class="facility__image" src="images/placeholder-ai-hotel-pool-view.webp" alt="Terrace above the pool with a view of the sea" width="1672" height="941" loading="lazy"></div>
+            <p class="facility__index">II</p>
+            <h3 class="facility__name">Terrace</h3>
+            <p class="facility__text">Find your favourite spot and stay a little longer.</p>
+          </li>
+          <li class="facility">
+            <div class="facility__media"><img class="facility__image" src="images/placeholder-ai-lounge-evening.webp" alt="Bar lounge with sofas and a view outside" width="1672" height="941" loading="lazy"></div>
+            <p class="facility__index">III</p>
+            <h3 class="facility__name">Bar</h3>
+            <p class="facility__text">Stop by before an evening walk.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 Breakfast -->
+    <section class="photo-section photo-section--strong breakfast" id="breakfast">
+      <img class="photo-section__image" src="images/placeholder-ai-breakfast-sea-view.webp" alt="Breakfast table on the terrace above the sea" width="1672" height="941" loading="lazy">
+      <div class="container photo-section__inner breakfast__inner">
+        <p class="eyebrow">04 / Breakfast</p>
+        <h2 class="breakfast__title">
+          <span class="script breakfast__script" aria-hidden="true">bon dia</span>
+          <span class="breakfast__title-serif">Mornings you won’t <em>want to rush</em></span>
+        </h2>
+        <div class="breakfast__text">
+          <p class="lead">On holiday, you can let the day start more slowly.</p>
+          <p>Come down for breakfast, grab a coffee and decide what today will be: heading to the sea, finding a new cove, walking along the coast, or staying at the hotel a little longer.</p>
+          <p class="breakfast__signature">At CASA BRAVA, a good day starts without hurry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Costa Brava -->
+    <section class="section area" id="costa-brava">
+      <div class="container">
+        <p class="eyebrow">05 / Costa Brava</p>
+        <h2 class="display area__title">The sea, coves <em>and</em> small discoveries — <em>all close by</em></h2>
+        <!-- TODO: Replace placeholder with approved client content. Video is loaded and played only while in view (js/main.js). -->
+        <video class="area__video" muted loop playsinline preload="none" poster="images/placeholder-ai-terrace-walkthrough-poster.webp" data-src="images/placeholder-ai-terrace-walkthrough.mp4" aria-label="Walking through the hotel terrace towards the sea"></video>
+        <div class="area__grid">
+          <div class="area__text">
+            <p class="lead">CASA BRAVA is a convenient base for exploring the coast.</p>
+            <p>Spend the day on the beach, find a small cove, take a walk along the sea, or choose a restaurant for a long evening dinner.</p>
+            <p>And tomorrow, you can take a completely different route.</p>
+          </div>
+          <!-- DEMO DATA: places and travel times -->
+          <ul class="place-list">
+            <li class="place-list__item"><span class="place-list__name">Llafranc Beach</span><span class="place-list__time">5 min walk</span></li>
+            <li class="place-list__item"><span class="place-list__name">Cala El Golfet</span><span class="place-list__time">25 min walk</span></li>
+            <li class="place-list__item"><span class="place-list__name">Camí de Ronda coastal path</span><span class="place-list__time">2 min walk</span></li>
+            <li class="place-list__item"><span class="place-list__name">Calella de Palafrugell</span><span class="place-list__time">20 min walk</span></li>
+          </ul>
+        </div>
+        <!-- TODO: Area guide page does not exist yet. -->
+        <a class="link-bar" href="#location">open the area guide <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <!-- 06 A day here -->
+    <section class="section section--light day" id="your-day">
+      <div class="container">
+        <p class="eyebrow">06 / A few days at CASA BRAVA</p>
+        <h2 class="day__title">What your day here <span class="bracket">could look like.</span></h2>
+        <ol class="day__list">
+          <li class="day-step">
+            <p class="day-step__index">I</p>
+            <h3 class="day-step__title">Morning</h3>
+            <p class="day-step__text">Wake up without an alarm. Come down for breakfast, have a coffee and decide where to go today.</p>
+          </li>
+          <li class="day-step">
+            <p class="day-step__index">II</p>
+            <h3 class="day-step__title">Day</h3>
+            <p class="day-step__text">The sea, beaches and small coves of the Costa Brava. A walk along the coast or a trip to one of the places nearby.</p>
+          </li>
+          <li class="day-step">
+            <p class="day-step__index">III</p>
+            <h3 class="day-step__title">After the beach</h3>
+            <p class="day-step__text">Come back to CASA BRAVA and spend a couple of hours by the pool. There’s nowhere else you need to be.</p>
+          </li>
+          <li class="day-step">
+            <p class="day-step__index">IV</p>
+            <h3 class="day-step__title">Evening</h3>
+            <p class="day-step__text">Head out to dinner at one of the restaurants nearby, then return to the hotel and end the day with a drink on the terrace.</p>
+          </li>
+        </ol>
+        <p class="day__outro">And in the morning, start again — <em>perhaps in a completely different way.</em></p>
+      </div>
+    </section>
+
+    <!-- 07 Gallery: collage over typography -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="eyebrow">07 / Gallery</p>
+        <div class="gallery__composition">
+          <h2 class="display gallery__title"><em>see what</em> Casa Brava <em>looks like</em></h2>
+          <div class="gallery__stage" data-parallax tabindex="0" role="region" aria-label="Photos of CASA BRAVA">
+            <img class="float-image gallery__float gallery__float--a" data-depth="0.6" src="images/placeholder-ai-hotel-entrance.webp" alt="Entrance of CASA BRAVA covered in bougainvillea" width="1672" height="941" loading="lazy">
+            <img class="float-image gallery__float gallery__float--b" data-depth="1.3" src="images/placeholder-ai-bathroom-bathtub.webp" alt="Stone bathroom with a freestanding bathtub" width="1672" height="941" loading="lazy">
+            <img class="float-image gallery__float gallery__float--c" data-depth="1.8" src="images/placeholder-ai-hotel-lounge.webp" alt="Lounge with olive trees and arched windows" width="1672" height="941" loading="lazy">
+            <img class="float-image gallery__float gallery__float--d" data-depth="0.9" src="images/placeholder-ai-room-sea-view-alt.webp" alt="Bedroom opening onto a sea view terrace" width="1672" height="941" loading="lazy">
+            <img class="float-image gallery__float gallery__float--e" data-depth="2.2" src="images/placeholder-ai-bathroom-shower.webp" alt="Stone shower and wooden vanity" width="1672" height="941" loading="lazy">
+            <svg class="seal gallery__seal" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="seal-path-gallery" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#seal-path-gallery">Moments between plans · Costa Brava · </textPath></text>
+              <text class="seal__center" x="60" y="68" text-anchor="middle">CB</text>
+            </svg>
+          </div>
+        </div>
+        <p class="gallery__hint" aria-hidden="true">Swipe for more photos <span>⟶</span></p>
+        <p class="gallery__lead">Rooms, morning light, the pool, the terrace — and those moments between plans that are sometimes the very reason to head for the sea.</p>
+        <!-- TODO: Full gallery (page or lightbox) not defined yet. -->
+        <a class="link-bar" href="#gallery">view photos <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <!-- 08 Location -->
+    <section class="section section--light location" id="location">
+      <div class="container">
+        <div class="location__top">
+          <div>
+            <p class="eyebrow">08 / Location</p>
+            <h2 class="heading">Everything people come to the Costa Brava for <em>is close by</em></h2>
+          </div>
+          <div class="location__text">
+            <p>CASA BRAVA is a short distance from the sea, surrounded by beaches, small coves, restaurants and places that are a pleasure to explore on foot or by car.</p>
+            <!-- DEMO DATA: address -->
+            <address class="location__address">Carrer de les Barques 8, 17211 Llafranc, Girona, Spain</address>
+          </div>
+        </div>
+        <!-- DEMO DATA: distances -->
+        <dl class="stats">
+          <div class="stats__item"><dt class="stats__label">Beach</dt><dd class="stats__value">5<span>min walk</span></dd></div>
+          <div class="stats__item"><dt class="stats__label">Palafrugell town centre</dt><dd class="stats__value">10<span>min drive</span></dd></div>
+          <div class="stats__item"><dt class="stats__label">Sant Sebastià Lighthouse</dt><dd class="stats__value">25<span>min walk</span></dd></div>
+          <div class="stats__item"><dt class="stats__label">Girona–Costa Brava Airport</dt><dd class="stats__value">45<span>min drive</span></dd></div>
+        </dl>
+        <a class="link-bar link-bar--dark" href="https://www.google.com/maps/search/?api=1&amp;query=Llafranc%2C+Girona%2C+Spain" target="_blank" rel="noopener">get directions <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking" id="booking">
+      <img class="booking__image" src="images/placeholder-ai-hotel-entrance.webp" alt="" width="1672" height="941" loading="lazy">
+      <div class="container booking__grid">
+        <div>
+          <p class="eyebrow">Book a stay</p>
+          <h2 class="booking__title">Your few days by the sea <span class="script booking__script">start here</span></h2>
+        </div>
+        <div class="booking__form-wrap">
+          <p class="lead">Choose your travel dates and see which CASA BRAVA rooms are available.</p>
+          <form class="booking-stack" action="#" novalidate>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-check-in">Check-in</label>
+              <input class="booking-stack__input" type="date" id="booking-check-in" name="check_in" required data-check-in>
+            </div>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-check-out">Check-out</label>
+              <input class="booking-stack__input" type="date" id="booking-check-out" name="check_out" required data-check-out>
+            </div>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-guests">Guests</label>
+              <select class="booking-stack__input" id="booking-guests" name="guests">
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+              </select>
+            </div>
+            <button class="booking-stack__submit" type="submit">Check available rooms <span aria-hidden="true">⟶</span></button>
+            <p class="booking-stack__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__meta">
+        <span>Boutique hotel</span>
+        <span>Costa Brava</span>
+        <span>© 2026</span>
+      </div>
+      <p class="site-footer__wordmark" aria-hidden="true">Casa Brava</p>
+      <div class="site-footer__grid">
+        <p class="site-footer__tagline">A small boutique hotel <em>on the Costa Brava.</em></p>
+        <!-- DEMO DATA: contacts -->
+        <address class="site-footer__contacts">
+          Carrer de les Barques 8<br>17211 Llafranc, Girona, Spain<br>
+          <a href="tel:+34972000000">+34 972 000 000</a><br>
+          <a href="mailto:hello@casabrava.example">hello@casabrava.example</a>
+        </address>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="rooms.html">Rooms</a>
+          <a href="#hotel">The hotel</a>
+          <a href="#location">Location</a>
+          <a href="#booking">Book a stay</a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

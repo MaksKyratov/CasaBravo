@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rooms — CASA BRAVA, Costa Brava</title>
+  <meta name="description" content="Standard Room, Room with Terrace or Sea View Room — find your room by the sea at CASA BRAVA on the Costa Brava.">
+  <meta name="theme-color" content="#14110e">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CASA BRAVA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Rooms — CASA BRAVA, Costa Brava">
+  <meta property="og:description" content="Standard Room, Room with Terrace or Sea View Room — find your room by the sea at CASA BRAVA on the Costa Brava.">
+  <!-- TODO: Add canonical, og:url and og:image once the domain and an approved social preview image (1200×630) exist. See docs/seo-map.md. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@400;500&family=Mrs+Saint+Delafield&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('has-motion');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- TODO: AI-generated images and demo facts. See docs/demo-data.md. Replace with approved client content before publishing. -->
+
+  <div class="page-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="CASA BRAVA — home">Casa Brava</a>
+      <div class="site-header__menu" id="site-menu">
+        <nav class="site-header__nav" aria-label="Main">
+          <a class="site-header__link" href="rooms.html" aria-current="page">Rooms</a>
+          <a class="site-header__link" href="index.html#hotel">The hotel</a>
+          <a class="site-header__link" href="index.html#costa-brava">Costa Brava</a>
+        </nav>
+        <nav class="site-header__nav site-header__nav--end" aria-label="Secondary">
+          <a class="site-header__link" href="index.html#gallery">Gallery</a>
+          <a class="site-header__link" href="index.html#location">Location</a>
+          <a class="site-header__link site-header__link--cta" href="#booking">Book a stay</a>
+        </nav>
+      </div>
+      <a class="site-header__book" href="#booking"><span>Book a stay</span></a>
+      <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="site-header__toggle-label">Menu</span><span class="site-header__toggle-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="photo-section photo-section--strong page-hero">
+      <img class="photo-section__image" src="images/placeholder-ai-room-sea-view-alt.webp" alt="Bedroom opening onto a terrace with a view of the sea" width="1672" height="941" fetchpriority="high">
+      <div class="container hero__inner page-hero__inner">
+        <div class="hero__meta">
+          <span>CASA BRAVA rooms</span>
+          <span>Standard · Terrace · Sea view</span>
+          <span>Costa Brava, Spain</span>
+        </div>
+        <div>
+          <h1 class="page-hero__title">
+            <span class="script page-hero__script" aria-hidden="true">rooms</span>
+            <span class="page-hero__title-serif">Find your room <em>by the sea</em></span>
+          </h1>
+          <div class="page-hero__text">
+            <p class="lead">Every room at CASA BRAVA is made for a relaxed stay on the Costa Brava.</p>
+            <p>Choose a simple, cosy room, a room with its own terrace, or one with a sea view — depending on how you picture your trip.</p>
+            <p>Enter your dates to see available rooms and current rates.</p>
+          </div>
+        </div>
+        <form class="booking-bar" action="#" novalidate>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-check-in">Check-in</label>
+            <input class="booking-bar__input" type="date" id="hero-check-in" name="check_in" required data-check-in>
+          </div>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-check-out">Check-out</label>
+            <input class="booking-bar__input" type="date" id="hero-check-out" name="check_out" required data-check-out>
+          </div>
+          <div class="booking-bar__field">
+            <label class="booking-bar__label" for="hero-guests">Guests</label>
+            <select class="booking-bar__input" id="hero-guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <button class="booking-bar__submit" type="submit">Check availability <span aria-hidden="true">⟶</span></button>
+          <p class="booking-bar__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 01 Standard Room -->
+    <section class="room" id="standard-room">
+      <div class="room__media">
+        <img class="room__image" src="images/placeholder-ai-room-standard.webp" alt="Standard Room with a double bed and a garden window" width="1672" height="941" loading="lazy">
+        <img class="room__detail-image" src="images/placeholder-ai-bathroom-shower.webp" alt="Stone shower in the Standard Room" width="1672" height="941" loading="lazy">
+      </div>
+      <div class="room__content">
+        <p class="room__label"><span>Room 01 / 03</span><span>For two</span></p>
+        <h2 class="room__title">Standard Room</h2>
+        <p class="room__subtitle">Everything you need for a few days on the Costa Brava</p>
+        <p class="room__text">A cosy room for two guests — a good choice if you plan to spend most of the day by the sea, walking the coast and exploring the area.</p>
+        <p class="room__text">Then come back to CASA BRAVA in the evening to rest and get ready for the next day.</p>
+        <!-- DEMO DATA: room specs -->
+        <dl class="spec-list">
+          <div class="spec-list__item"><dt class="spec-list__term">Size</dt><dd class="spec-list__value">18 m²</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Guests</dt><dd class="spec-list__value">Up to 2</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bed</dt><dd class="spec-list__value">Queen bed, 160 × 200 cm</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bathroom</dt><dd class="spec-list__value">Walk-in shower</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">View</dt><dd class="spec-list__value">Inner garden</dd></div>
+        </dl>
+        <p class="amenity-line">Air conditioning · Free Wi-Fi · Smart TV · Safe · Hairdryer</p>
+        <div class="room__actions">
+          <a class="button-outline" href="#booking">Check dates ⟶</a>
+          <!-- TODO: Room gallery (page or lightbox) not defined yet. -->
+          <a class="arrow-link" href="#standard-room">View photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Room with Terrace -->
+    <section class="room room--light room--reverse" id="room-with-terrace">
+      <div class="room__media">
+        <img class="room__image" src="images/placeholder-ai-room-terrace.webp" alt="Room with Terrace opening onto a private terrace above the sea" width="1672" height="941" loading="lazy">
+        <img class="room__detail-image" src="images/placeholder-ai-terrace-sea.webp" alt="Terrace with loungers and a view of the sea" width="1672" height="941" loading="lazy">
+      </div>
+      <div class="room__content">
+        <p class="room__label"><span>Room 02 / 03</span><span>With terrace</span></p>
+        <h2 class="room__title">Room with Terrace</h2>
+        <p class="room__subtitle">Your own terrace for slow mornings and warm evenings</p>
+        <p class="room__text">A room for those who’d like a little more personal space.</p>
+        <p class="room__text">Step out onto the terrace with your morning coffee, rest here after the beach, or stay outside into the evening.</p>
+        <p class="room__text">On holiday, a few extra square metres under the open sky can change the whole rhythm of the day.</p>
+        <!-- DEMO DATA: room specs -->
+        <dl class="spec-list">
+          <div class="spec-list__item"><dt class="spec-list__term">Size</dt><dd class="spec-list__value">22 m²</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Terrace</dt><dd class="spec-list__value">10 m², private, with two loungers</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Guests</dt><dd class="spec-list__value">Up to 2</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bed</dt><dd class="spec-list__value">King bed, 180 × 200 cm, or two single beds</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bathroom</dt><dd class="spec-list__value">Walk-in shower</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">View</dt><dd class="spec-list__value">Garden and pool</dd></div>
+        </dl>
+        <p class="amenity-line">Air conditioning · Free Wi-Fi · Smart TV · Coffee machine · Mini fridge · Safe</p>
+        <div class="room__actions">
+          <a class="button-outline" href="#booking">Check dates ⟶</a>
+          <a class="arrow-link" href="#room-with-terrace">View photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Sea View Room -->
+    <section class="room" id="sea-view-room">
+      <div class="room__media">
+        <img class="room__image" src="images/placeholder-ai-room-sea-view.webp" alt="Sea View Room with open doors to the Mediterranean" width="1672" height="941" loading="lazy">
+        <img class="room__detail-image" src="images/placeholder-ai-bathroom-bathtub.webp" alt="Freestanding bathtub in the Sea View Room" width="1672" height="941" loading="lazy">
+      </div>
+      <div class="room__content">
+        <p class="room__label"><span>Room 03 / 03</span><span>Sea view</span></p>
+        <h2 class="room__title">Sea View Room</h2>
+        <p class="room__subtitle">The sea begins right outside your window</p>
+        <p class="room__text">Wake up, open the curtains and see the Mediterranean first thing.</p>
+        <p class="room__text">The Sea View Room is for those who want the view to be part of the journey — and to bring a little more Costa Brava even into the hours spent at the hotel.</p>
+        <p class="room__text">Stay in the room a little longer in the morning. Sometimes that’s exactly what a holiday is for.</p>
+        <!-- DEMO DATA: room specs -->
+        <dl class="spec-list">
+          <div class="spec-list__item"><dt class="spec-list__term">Size</dt><dd class="spec-list__value">24 m²</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Guests</dt><dd class="spec-list__value">Up to 2</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bed</dt><dd class="spec-list__value">King bed, 180 × 200 cm</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Bathroom</dt><dd class="spec-list__value">Bathtub and rain shower</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">View</dt><dd class="spec-list__value">Sea</dd></div>
+          <div class="spec-list__item"><dt class="spec-list__term">Balcony</dt><dd class="spec-list__value">French balcony facing the sea</dd></div>
+        </dl>
+        <p class="amenity-line">Air conditioning · Free Wi-Fi · Smart TV · Coffee machine · Bathrobes · Safe</p>
+        <div class="room__actions">
+          <a class="button-outline" href="#booking">Check dates ⟶</a>
+          <a class="arrow-link" href="#sea-view-room">View photos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room guide -->
+    <section class="section guide">
+      <div class="container">
+        <p class="eyebrow">Room guide</p>
+        <h2 class="display guide__title">Not sure <em>which room</em> to choose?</h2>
+        <ul class="guide__list">
+          <li class="guide__item">If what matters most is a comfortable base for beaches and walks, choose the <a href="#standard-room">Standard Room</a></li>
+          <li class="guide__item">If you’d like your own space in the open air — the <a href="#room-with-terrace">Room with Terrace</a></li>
+          <li class="guide__item">And if you want to wake up and see the sea, take a look at the <a href="#sea-view-room">Sea View Room</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking" id="booking">
+      <img class="booking__image" src="images/placeholder-ai-costa-brava-cove.webp" alt="" width="1920" height="819" loading="lazy">
+      <div class="container booking__grid">
+        <div>
+          <p class="eyebrow">Book CASA BRAVA</p>
+          <h2 class="booking__title">When would you like to come <span class="script booking__script">to the sea?</span></h2>
+        </div>
+        <div class="booking__form-wrap">
+          <p class="lead">Choose your dates and we’ll show you the rooms available for your stay, along with current rates.</p>
+          <form class="booking-stack" action="#" novalidate>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-check-in">Check-in</label>
+              <input class="booking-stack__input" type="date" id="booking-check-in" name="check_in" required data-check-in>
+            </div>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-check-out">Check-out</label>
+              <input class="booking-stack__input" type="date" id="booking-check-out" name="check_out" required data-check-out>
+            </div>
+            <div class="booking-stack__field">
+              <label class="booking-stack__label" for="booking-guests">Guests</label>
+              <select class="booking-stack__input" id="booking-guests" name="guests">
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+              </select>
+            </div>
+            <button class="booking-stack__submit" type="submit">Find available rooms <span aria-hidden="true">⟶</span></button>
+            <p class="booking-stack__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__meta">
+        <span>Boutique hotel</span>
+        <span>Costa Brava</span>
+        <span>© 2026</span>
+      </div>
+      <p class="site-footer__wordmark" aria-hidden="true">Casa Brava</p>
+      <div class="site-footer__grid">
+        <p class="site-footer__tagline">A small boutique hotel <em>on the Costa Brava.</em></p>
+        <!-- DEMO DATA: contacts -->
+        <address class="site-footer__contacts">
+          Carrer de les Barques 8<br>17211 Llafranc, Girona, Spain<br>
+          <a href="tel:+34972000000">+34 972 000 000</a><br>
+          <a href="mailto:hello@casabrava.example">hello@casabrava.example</a>
+        </address>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="rooms.html">Rooms</a>
+          <a href="index.html#hotel">The hotel</a>
+          <a href="index.html#location">Location</a>
+          <a href="#booking">Book a stay</a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
